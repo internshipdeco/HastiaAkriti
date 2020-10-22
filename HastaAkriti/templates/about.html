@@ -13,7 +13,8 @@
         
         <title>
         </title>
-          <link rel="stylesheet" type="text/css" href="css/demo.css">
+         {% load static %}
+          <link rel="stylesheet"  href="{% static 'css/demo.css' %}">
    
     </head>
      <body>
@@ -47,9 +48,9 @@
                                  <div class="dropbtn1">Navigate to.. <i class="fa fa-list-ul" style="color: white; float: right;"></i></div>
                                  
                                   <div class="dropdown-content col-xs-12 col-sm-12 col-md-12">
-        <li><a href="website.html">Home</a></li>
-        <li ><a href="services.html">Service</a></li>
-        <li class="current"> <a href="about.html">About us </a>
+        <li><a href="/">Home</a></li>
+        <li ><a href="/services">Service</a></li>
+        <li class="current"> <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -58,19 +59,19 @@
             </ul>
         </li>
                                
-        <li><a href="contact.html">Contact</a></li>
-                         <li><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+                         <li><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
                                </div></div></ul></nav>
                               <div class="horizontalnav">
      <nav > 
          
                          
                          <ul>
-        <li><a href="website.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Service</a></li>
         <li>
-            <a href="about.html">About us </a>
+            <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -79,9 +80,9 @@
             </ul>
         </li>
                                
-        <li><a href="contact.html">Contact</a></li>
-                         <li><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+                         <li><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
          </ul></nav></div></div></div></div></div>
              
          
@@ -123,7 +124,7 @@
          <div class="row">
              <div class="block-27">
 					<div class="block-27 col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div class="" ><img class="imgdemo" src="img/index-1_img_5.jpg" alt="Image"></div></div>
+                        <div class="" ><img class="imgdemo" src='{% static "img/index-1_img_5.jpg" %}' alt="Image"></div></div>
 						<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Janice Barlow	</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -134,7 +135,7 @@
 					
                     
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div ><img class="imgdemo" src="img/index-1_img_6.jpg" alt="Image"></div></div>
+                        <div ><img class="imgdemo" src='{% static "img/index-4_img_6.jpg" %}' alt="Image"></div></div>
 					<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Janice Barlow</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -147,7 +148,7 @@
                     <div class="row">
                         <div class="block-27">
 					<div class=" block-27 col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div><img class="imgdemo" src="img/index-1_img_7.jpg" alt="Image"></div></div>
+                        <div><img class="imgdemo" src='{% static "img/index-4_img_7.jpg" %}' alt="Image"></div></div>
 						<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Laura Moran</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -157,7 +158,7 @@
 						</div>
 					
 					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div ><img class="imgdemo" src="img/index-1_img_8.jpg" alt="Image"></div></div>
+                        <div ><img class="imgdemo" src='{% static "img/index-4_img_8.jpg" %}' alt="Image"></div></div>
 						<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Mike Canty</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -169,7 +170,7 @@
              <div class="row">
                  <div class="block-27">
                         <div class=" block-27 col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div ><img class="imgdemo" src="img/index-1_img_5.jpg" alt="Image"></div></div>
+                        <div ><img class="imgdemo" src='{% static "img/index-4_img_5.jpg" %}' alt="Image"></div></div>
 						<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Janice Barlow	</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -180,7 +181,7 @@
 					
                     
 					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div ><img class="imgdemo" src="img/index-1_img_6.jpg" alt="Image"></div></div>
+                        <div ><img class="imgdemo" src='{% static "img/index-4_img_6.jpg" %}' alt="Image"></div></div>
 					<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Janice Barlow</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -193,7 +194,7 @@
                     <div class="row">
                         <div class="block-27">
 					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div><img class="imgdemo" src="img/index-1_img_7.jpg" alt="Image"></div></div>
+                        <div><img class="imgdemo" src='{% static "img/index-4_img_7.jpg" %}' alt="Image"></div></div>
 						<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Laura Moran</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -203,7 +204,7 @@
 						</div>
 					
 					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                        <div ><img class="imgdemo" src="img/index-1_img_8.jpg" alt="Image"></div></div>
+                        <div ><img class="imgdemo" src='{% static "img/index-4_img_8.jpg" %}' alt="Image"></div></div>
 						<div class="last col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3">
 							<h3>Mike Canty</h3>
 							<p>Nam aliquam pretium feugiat. Duis sem<br> est viverra eu interdum ac suscipit nec</p>
@@ -293,14 +294,14 @@
 				<div class="">
 					<nav>
 						<ul class="footer-menu clearfix">
-                            <li><a href="news.html">news</a></li>
+                            <li><a href="/news">news</a></li>
 							
-							<li><a href="properties.html">Properties</a></li>
-                            <li><a href="contact.html">Contacts</a></li>
-                            <li  class="current"><a href="about.html">About</a></li>
-							<li><a href="services.html">Services</a></li>
+							<li><a href="/properties">Properties</a></li>
+                            <li><a href="/contact">Contacts</a></li>
+                            <li  class="current"><a href="/about">About</a></li>
+							<li><a href="/services">Services</a></li>
 							
-							<li><a href="website.html">Home</a></li>
+							<li><a href="/">Home</a></li>
 						</ul>
 					</nav>
 					<div class="social">

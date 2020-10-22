@@ -10,7 +10,8 @@
         <title>
         </title>
            <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
-<link rel="stylesheet" type="text/css" href="css/demo.css">
+        {% load static %}
+          <link rel="stylesheet"  href="{% static 'css/demo.css' %}">
          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
    
     </head>
@@ -46,10 +47,10 @@
                                  <div class="dropbtn1">Navigate to.. <i class="fa fa-list-ul" style="color: white; float: right;"></i></div>
                                  
                                   <div class="dropdown-content col-xs-12 col-sm-12 col-md-12">
-        <li><a href="website.html">Home</a></li>
-        <li class="current"><a href="services.html">Service</a></li>
+        <li><a href="/">Home</a></li>
+        <li class="current"><a href="/services">Service</a></li>
         <li>
-            <a href="about.html">About us </a>
+            <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -58,19 +59,19 @@
             </ul>
         </li>
                                
-        <li><a href="contact.html">Contact</a></li>
-                         <li><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+                         <li><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
                                </div></div></ul></nav>
                               <div class="horizontalnav">
      <nav > 
          
                          
                          <ul>
-        <li><a href="website.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="#">Service</a></li>
         <li>
-            <a href="about.html">About us </a>
+            <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -79,9 +80,9 @@
             </ul>
         </li>
                                
-        <li><a href="contact.html">Contact</a></li>
-                         <li><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+                         <li><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
          </ul></nav></div></div></div></div></div> 
                  
                               
@@ -98,14 +99,14 @@
                 <div class ="row">
                      <div class =" col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <div class="block3">
-                         <img src ="img/index-2_img-1.jpg" alt = "Image" >
+                         <img src = '{% static "img/index-2_img-1.jpg" %}' alt = "Image" >
                          <div class=" bottom"><h4 ><a href = "#">property marketing</a></h4>
                              <p>Mauris fermentum tortor non enim aliquet condimentum nam aliquam pretium feugiat duis sem est viverra eu interdum ac.</p></div></div></div>
                          
                      
                       <div class =" col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <div class="block3">
-                             <img src ="img/index-2_img-2.jpg" alt = "Image">
+                             <img src = '{% static "img/index-2_img-2.jpg" %}' alt = "Image">
                          <div class=" bottom"><h4><a href = "#">buyer agency</a></h4>
                          <p>Mauris fermentum tortor non enim aliquet condimentum nam aliquam pretium feugiat duis sem est viverra eu interdum ac.</p></div>
                          
@@ -113,14 +114,14 @@
                      <div class="row">
                      <div class =" col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <div class="block3">
-                             <img  src ="img/index-2_img-3.jpg" alt = "Image">
+                             <img  src = '{% static "img/index-2_img-3.jpg" %}'alt = "Image">
                          <div class=" bottom" ><h4><a href = "#">timberland acquistions</a></h4>
                          <p>Mauris fermentum tortor non enim aliquet condimentum nam aliquam pretium feugiat duis sem est viverra eu interdum ac.</p></div>
                          
                          </div></div>
                      <div class ="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <div class="block3">
-                             <img  src ="img/index-2_img-4.jpg" alt = "Image">
+                             <img  src = '{% static "img/index-2_img-4.jpg" %}' alt = "Image">
                          <div class=" bottom"><h4><a href = "#">property evaluations</a></h4>
                          <p>Mauris fermentum tortor non enim aliquet condimentum nam aliquam pretium feugiat duis sem est viverra eu interdum ac.</p></div>
                          
@@ -212,40 +213,40 @@
                      <div class= " col-lg-3 col-lg-offet-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <ul>
                          <li>
-                             <img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li>
+                             <img src= '{% static "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src= '{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li>
                              
                          </ul>
                      </div>
                       <div class= " col-lg-3 col-lg-offet-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <ul>
                           <li>
-                             <img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li>
+                             <img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li>
                              
                          </ul>
                      </div>
                       <div class= "col-lg-3 col-lg-offet-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <ul>
                           <li>
-                             <img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li>
+                             <img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li>
                              
                          </ul>
                      </div>
                       <div class= "col-lg-3 col-lg-offet-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                          <ul>
                          <li>
-                             <img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li><br>
-                             <li><img src="img/bullet.png"><a href ="#">Praesent vestibulum molestie</a></li>
+                             <img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li><br>
+                             <li><img src='{% static  "img/bullet.png" %}'><a href ="#">Praesent vestibulum molestie</a></li>
                              
                          </ul>
                      </div>
@@ -269,14 +270,14 @@
 				<div class="">
 					<nav>
 						<ul class="footer-menu clearfix">
-                            <li><a href="news.html">news</a></li>
-                            <li><a href="properties.html">Properties</a></li>
-							<li><a href="contact.html">Contacts</a></li>
+                            <li><a href="/news">news</a></li>
+                            <li><a href="/properties">Properties</a></li>
+							<li><a href="/contact">Contacts</a></li>
 							
-							<li><a href="about.html">About</a></li>
-							<li class="current"><a href="services.html">Services</a></li>
+							<li><a href="/about">About</a></li>
+							<li class="current"><a href="/services">Services</a></li>
 							
-							<li ><a href="website.html">Home</a></li>
+							<li ><a href="">Home</a></li>
 						</ul>
 					</nav>
 					<div class="social">

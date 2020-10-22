@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/demo.css">
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
-
+    {% load static %}
+          <link rel="stylesheet"  href="{% static 'css/demo.css' %}">
     <title>contact us</title>
     </head>
 <body>
@@ -45,10 +46,10 @@
                                  <div class="dropbtn1">Navigate to.. <i class="fa fa-list-ul" style="color: white; float: right;"></i></div>
                                  
                                   <div class="dropdown-content col-xs-12 col-sm-12 col-md-12">
-        <li><a href="website.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Service</a></li>
         <li>
-            <a href="about.html">About us </a>
+            <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -57,19 +58,19 @@
             </ul>
         </li>
                                
-        <li class="current"><a href="contact.html">Contact</a></li>
-                         <li><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li class="current"><a href="/contact">Contact</a></li>
+                         <li><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
                                </div></div></ul></nav>
                               <div class="horizontalnav">
      <nav > 
          
                          
                          <ul>
-        <li><a href="website.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Service</a></li>
         <li>
-            <a href="about.html">About us </a>
+            <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -78,9 +79,9 @@
             </ul>
         </li>
                                
-        <li><a href="contact.html">Contact</a></li>
-                         <li><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+                         <li><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
          </ul></nav></div></div></div></div></div> 
                  
              
@@ -236,14 +237,14 @@
 				<div class="">
 					<nav>
 						<ul class="footer-menu clearfix">
-                            <li><a href="news.html">news</a></li>
-                            <li><a href="properties.html">Properties</a></li>
-							<li class="current"><a href="contact.html">Contacts</a></li>
-							<li><a href="about.html">About</a></li>  
+                            <li><a href="/news">news</a></li>
+                            <li><a href="/properties">Properties</a></li>
+							<li class="current"><a href="/contact">Contacts</a></li>
+							<li><a href="/about">About</a></li>
 							
-							<li><a href="services.html">Services</a></li>
+							<li><a href="/services">Services</a></li>
 							
-							<li><a href="website.html">Home</a></li>
+							<li><a href="/">Home</a></li>
 						</ul>
 					</nav>
 					<div class="social">

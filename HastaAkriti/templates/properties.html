@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-         <link rel="stylesheet" type="text/css" href="css/demo.css">
+
            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
                  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
-
+			{% load static %}
+          <link rel="stylesheet"  href="{% static 'css/demo.css' %}">
         <title>
         </title>
          
@@ -51,10 +52,10 @@
                                  <div class="dropbtn1">Navigate to.. <i class="fa fa-list-ul" style="color: white; float: right;"></i></div>
                                  
                                   <div class="dropdown-content col-xs-12 col-sm-12 col-md-12">
-        <li><a href="website.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Service</a></li>
         <li>
-            <a href="about.html">About us </a>
+            <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -63,19 +64,19 @@
             </ul>
         </li>
                                
-        <li><a href="contact.html">Contact</a></li>
-                         <li class="current"><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+                         <li class="current"><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
                                </div></div></ul></nav>
                               <div class="horizontalnav ">
      <nav > 
          
                          
                          <ul>
-        <li><a href="website.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Service</a></li>
         <li>
-            <a href="about.html">About us </a>
+            <a href="/about">About us </a>
             <ul class="dropdown">
                 <li><a href="#">Laptops</a></li>
                  
@@ -84,31 +85,31 @@
             </ul>
         </li>
                                
-        <li><a href="contact.html">Contact</a></li>
-                         <li class="current"><a href="properties.html">Properties</a></li><li>
-                         <a href="news.html">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+                         <li class="current"><a href="/properties">Properties</a></li><li>
+                         <a href="/news">News</a></li>
          </ul></nav></div></div></div></div></div> 
                
-         
+
          <section id="content">
              <div class="pp1">
              <div class ="block-3">
              <div class= "container">
                  <div class ="row">
                      <div class="grid_4 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                         <img class="imgdemo" src = "img/index-3_img-17.jpg" alt ="">
+                         <img class="imgdemo" src = '{% static "img/index-3_img-17.jpg" %}' alt ="">
                          <div class="centered">
                          <h2>
                              <a href ="#"> vbacant land (2345)</a></h2></div>
                      </div>
                      <div class="grid_4 grid_4 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-                         <img class="imgdemo" src = "img/index-3_img-18.jpg" alt ="">
+                         <img class="imgdemo" src = '{% static "img/index-3_img-18.jpg" %}' alt ="">
                          <div class="centered" >
                          <h2>
                              <a href ="#"> vbacant land (2345)</a></h2></div>
                      </div>
                      <div class="grid_4 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2" >
-                         <img class="imgdemo" src = "img/index-3_img-19.jpg" alt ="">
+                         <img class="imgdemo" src = '{% static "img/index-3_img-19.jpg" %}' alt ="">
                          <div class="centered"  >
                          <h2><a href ="#">Commercial<br>Industrial (339)</a></h2></div>
                               </div>
@@ -136,7 +137,7 @@
              <div class ="container">
              <div class="row">
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-01.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-01.jpg" %}' alt="">
                         
                         <center><h3><a id="a1">Praesent Vestibulum</a></h3></center>
 						<p class="descr">Mauris fermentum tortor non enim <br>aliquet condimentum.</p>
@@ -146,7 +147,7 @@
 						<p class="element_4">Price: $2,741,893</p>
 					</div>
 					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 ">
-						<img class="imgdemo" src="img/index-3_img-02.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-02.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Molestie Aenean Nonummy</a></h3></center>
 						<p class="descr">Nam aliquam pretium feugiat. Duis sem <br>est, viverra eu interdum ac.</p>
 						<p class="element_1">Total Acres: 3,103</p>
@@ -155,7 +156,7 @@
 						<p class="element_4">Price Reduced</p>
 					</div>
 					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-03.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-03.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Hendrerit Vivamus Eget </a></h3></center>
 						<p class="descr">Suscipit nec mauris suspendisse <br>commodo tempor sagittis!</p>
 						<p class="element_1">Total Acres: 2,560</p>
@@ -164,7 +165,7 @@
 						<p class="element_4">Price: $6,208,000</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-04.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-04.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Nibh Etiam Cursus Leo Vel </a></h3></center>
 						<p class="descr">In justo est, sollicitudin eu scelerisque<br> pretium, placerat eget elit. </p>
 						<p class="element_1">Total Acres: 2,010</p>
@@ -175,7 +176,7 @@
                  </div>
                  <div class="row">
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-05.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-05.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Cursus Leo Vel Metus</a></h3></center>
 						<p class="descr">Praesent faucibus rutrum odio at<br> rhoncus. Pellentesque vitae tortor.</p>
 						<p class="element_1">Total Acres: 1,424</p>
@@ -184,7 +185,7 @@
 						<p class="element_4">Price: $2,741,893</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-06.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-06.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Metus Nulla Facilisi</a></h3></center>
 						<p class="descr">Pellentesque vitae tortor id neque <br>fermentum pretium. Maecenas ac.</p>
 						<p class="element_1">Total Acres: 2,010</p>
@@ -193,7 +194,7 @@
 						<p class="element_4">Price Reduced</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-07.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-07.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Aenean Nec Eros</a></h3></center>
 						<p class="descr">Maecenas ac lacus ut neque rhoncus <br>laoreet sed id tellus donec justo tellus.</p>
 						<p class="element_1">Total Acres: 3,103</p>
@@ -202,7 +203,7 @@
 						<p class="element_4">Price Reduced</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-08.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-08.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Vestibulum Ante Ipsum </a></h3>
                         </center>
 						<p class="descr">Tincidunt vitae pellentesque nec,<br> pharetra a orci. Praesent nunc egestas.</p>
@@ -214,7 +215,7 @@
                  </div>
                  <div class="row">
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-09.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-09.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Suspendisse Sollicitudin </a></h3></center>
 						<p class="descr">Praesent nunc egestas eget elementum <br> sed; rutrum eget metus!</p>
 						<p class="element_1">Total Acres: 3,103</p>
@@ -223,7 +224,7 @@
 						<p class="element_4">Price Reduced</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-10.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-10.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Posuere Cubilia Curae</a></h3></center>
 						<p class="descr">Vestibulum congue congue dui ut porta.<br> Aenean laoreet viverra turpis.</p>
 						<p class="element_1">Total Acres: 1,424</p>
@@ -232,7 +233,7 @@
 						<p class="element_4">Price: $2,741,893</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-11.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-11.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Luctus Et Ultrices Posuere </a></h3></center>
 						<p class="descr">A commodo purus eleifend a. Nam lacus <br> dui; egestas ut aliquam nec eleifend.</p>
 						<p class="element_1">Total Acres: 2,560</p>
@@ -241,7 +242,7 @@
 						<p class="element_4">Price: $6,208,000</p>
 					</div>
 					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3   ">
-						<img class="imgdemo" src="img/index-3_img-12.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-12.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">PrimisIn Faucibus Orci </a></h3></center>
 						<p class="descr">Nam lacus dui; egestas ut aliquam <br>nec eleifend sit amet est. Nam justo elit. </p>
 						<p class="element_1">Total Acres: 2,010</p>
@@ -251,7 +252,7 @@
                      </div></div>
                  <div class="row">
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3 ">
-						<img class="imgdemo" src="img/index-3_img-13.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-13.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Sollicitudin Velit Sed Leo</a></h3></center>
 						<p class="descr">Nam justo elit dictum id tempus a,<br> ultricies tempus lacus. Nunc purus.</p>
 						<p class="element_1">Total Acres: 2,010</p>
@@ -260,7 +261,7 @@
 						<p class="element_4">Price Reduced</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-14.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-14.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Velit Sed Leo Ut Pharetra </a></h3></center>
 						<p class="descr">Eleifend eget facilisis ac, sagittis non <br> tortor. Vivamus eu enim a orci accumsan.</p>
 						<p class="element_1">Total Acres: 2,560</p>
@@ -269,7 +270,7 @@
 						<p class="element_4">Price: $6,208,000</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-15.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-15.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Ut Pharetra Augue Nec </a></h3></center>
 						<p class="descr">Vivamus eu enim a orci accumsan<br> tincidunt ut ut elit. Vestibulum nisi orci.</p>
 						<p class="element_1">Total Acres: 3,103</p>
@@ -278,7 +279,7 @@
 						<p class="element_4">Price Reduced</p>
 					</div>
 					<div class=" col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-3  ">
-						<img class="imgdemo" src="img/index-3_img-16.jpg" alt="">
+						<img class="imgdemo" src='{% static "img/index-3_img-16.jpg" %}' alt="">
 						<center><h3><a id="a1" href="#">Augue Nec Augue Nam Elit </a></h3></center>
 						<p class="descr">Vestibulum nisi orci rutrum ac auctor non,<br> viverra et magna?</p>
 						<p class="element_1">Total Acres: 1,424</p>
@@ -308,15 +309,15 @@
 				<div class="">
 					<nav>
 						<ul class="footer-menu clearfix">
-                            <li><a href="news.html">news</a></li>
-                            <li class="current"><a href="properties.html">Properties</a></li>
-							<li><a href="contact.html">Contacts</a></li>
+                            <li><a href="/news">news</a></li>
+                            <li class="current"><a href="/properties">Properties</a></li>
+							<li><a href="/contact">Contacts</a></li>
 							
 							
-                            <li><a href="about.html">About</a></li>
-							<li><a href="services.html">Services</a></li>
+                            <li><a href="/about">About</a></li>
+							<li><a href="/services">Services</a></li>
 							
-							<li ><a href="website.html">Home</a></li>
+							<li ><a href="/">Home</a></li>
 						</ul>
 					</nav>
 					<div class="social">
